@@ -1,9 +1,72 @@
 <?php 
 
     /*
-    Creiamo un array contenente le partite di basket di un’ipotetica tappa del calendario. Ogni array avrà una squadra di casa e una squadra ospite, punti fatti dalla squadra di casa e punti fatti dalla squadra ospite. Stampiamo a schermo tutte le partite con questo schema.
-    
-    Olimpia Milano - Cantù | 55-60
+    Creiamo un array contenente le partite di basket di un’ipotetica tappa del calendario. Ogni array avrà una squadra di casa e una squadra ospite, punti fatti dalla squadra di casa e punti fatti dalla squadra ospite. Stampiamo a schermo tutte le partite con questo schema: Olimpia Milano - Cantù | 55-60
     */
 
+    $basketballMatches = [
+        [
+            "homeTeam" => "Los Angeles Lakers",
+            "awayTeam" => "Phoenix Suns",
+            "score" => [
+                "homeTeamPoints" => "80",
+                "awayTeamPoints" => "84"
+            ]
+        ],
+        [
+            "homeTeam" => "Orlando Magic",
+            "awayTeam" => "Golden State Warriors",
+            "score" => [
+                "homeTeamPoints" => "95",
+                "awayTeamPoints" => "110"
+            ]
+        ],
+        [
+            "homeTeam" => "Brooklin Nets",
+            "awayTeam" => "Milwaukee Bucks",
+            "score" => [
+                "homeTeamPoints" => "78",
+                "awayTeamPoints" => "75"
+            ]
+        ],
+        [
+            "homeTeam" => "New York Knicks",
+            "awayTeam" => "Washington Wizards",
+            "score" => [
+                "homeTeamPoints" => "105",
+                "awayTeamPoints" => "109"
+            ]
+        ],
+        [
+            "homeTeam" => "Chicago Bulls",
+            "awayTeam" => "Dallas Mavericks",
+            "score" => [
+                "homeTeamPoints" => "110",
+                "awayTeamPoints" => "106"
+            ]
+        ]
+    ];
+
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snack 1</title>
+    </head>
+
+    <body>
+        <ul>
+            <?php 
+                for ($i = 0; $i < count($basketballMatches); $i++) {
+                    $match = $basketballMatches[$i];
+                    $score = $match["score"];
+                    echo "<li>". $match["homeTeam"] . " - " . $match["awayTeam"] . " | " . $score["homeTeamPoints"] . " - " . $score["awayTeamPoints"] ."</li>";
+                }
+            ?>
+        </ul>
+    </body>
+</html>
