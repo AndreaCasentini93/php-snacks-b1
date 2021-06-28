@@ -3,3 +3,32 @@
     padding: 0;
     margin: 0;
 }
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Akaya Kanadaka', cursive;
+    background-image: linear-gradient(to bottom right, #051A23, #234c81);
+    text-shadow: 1px 1px 5px #000000;
+}
+
+h1 {
+    margin-bottom: 80px;
+    font-size: 80px;
+    color: #FFFFFF;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-right: 50px;
+    font-size: 50px;
+    color: #295A9A;
+}
