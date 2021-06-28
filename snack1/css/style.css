@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    color: #FFFFFF;
+    background-image: url('../img/basket-background.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    margin-bottom: 50px;
+    font-size: 60px;
+    color: #DB4838;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 25px;
+    font-size: 25px;
+}
