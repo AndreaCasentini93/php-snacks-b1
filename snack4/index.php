@@ -60,7 +60,7 @@
         <?php foreach ($posts as $postDate => $postArray1) { ?>
 
         <div class="container">
-            <h1>Post del <?php echo $postDate; ?></h1>
+            <h1>Post del <?php echo str_replace("/", "-", $postDate); ?></h1>
             <ul>
                 <?php foreach ($postArray1 as $postArray2) { ?>
 
