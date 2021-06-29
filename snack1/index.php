@@ -70,20 +70,19 @@
     <body>
         <h1>Risultati Basket Live</h1>
         <ul>
-            <?php 
-                for ($i = 0; $i < count($basketballMatches); $i++) {
-                    $match = $basketballMatches[$i];
-                    $score = $match["score"];
-            ?>
+        <?php 
+            for ($i = 0; $i < count($basketballMatches); $i++) {
+                $match = $basketballMatches[$i];
+                $score = $match["score"];
+        ?>
 
             <li>
                 <?php echo $match["homeTeam"] . " - " . $match["awayTeam"] . " | " . $score["homeTeamPoints"] . " - " . $score["awayTeamPoints"]; ?>
             </li>
 
-            <?php
-                } 
-            ?>
-            
+        <?php
+            } 
+        ?> 
         </ul>
     </body>
 </html>
