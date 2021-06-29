@@ -56,14 +56,19 @@
     </head>
 
     <body>
-        <?php foreach ($posts as $date => $datearray) { ?>
-        <h1>Post del <?php echo $date; ?></h1>
+        <?php foreach ($posts as $postDate => $postArray1) { ?>
+        <h1>Post del <?php echo $postDate; ?></h1>
         <ul>
-            <?php foreach ($datearray as $datekey => $postarray) { ?>
-                <?php foreach ($postarray as $postkey => $postvalue) { ?>
-                    <li><?php echo $postkey . ": " . $postvalue; ?></li>
+            <?php foreach ($postArray1 as $postArray2) { ?>
+
+                <?php foreach ($postArray2 as $postArray2_key => $postArray2_value) { ?>
+
+                    <li><?php echo $postArray2_key . ": " . $postArray2_value; ?></li>
+                    
                 <?php } ?>
+
                 <br>
+
             <?php } ?>
         </ul>
         <?php } ?>
