@@ -52,25 +52,30 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
         <title>Snack 4</title>
     </head>
 
     <body>
         <?php foreach ($posts as $postDate => $postArray1) { ?>
-        <h1>Post del <?php echo $postDate; ?></h1>
-        <ul>
-            <?php foreach ($postArray1 as $postArray2) { ?>
 
-                <?php foreach ($postArray2 as $postArray2_key => $postArray2_value) { ?>
+        <div class="container">
+            <h1>Post del <?php echo $postDate; ?></h1>
+            <ul>
+                <?php foreach ($postArray1 as $postArray2) { ?>
 
-                    <li><?php echo $postArray2_key . ": " . $postArray2_value; ?></li>
-                    
+                    <div class="box">
+                        <?php foreach ($postArray2 as $postArray2_key => $postArray2_value) { ?>
+
+                            <li><?php echo $postArray2_value; ?></li>
+                            
+                        <?php } ?>
+                    </div>
+
                 <?php } ?>
+            </ul>
+        </div>   
 
-                <br>
-
-            <?php } ?>
-        </ul>
         <?php } ?>
     </body>
 </html>
