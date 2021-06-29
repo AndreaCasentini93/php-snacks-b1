@@ -74,9 +74,16 @@
                 for ($i = 0; $i < count($basketballMatches); $i++) {
                     $match = $basketballMatches[$i];
                     $score = $match["score"];
-                    echo "<li>". $match["homeTeam"] . " - " . $match["awayTeam"] . " | " . $score["homeTeamPoints"] . " - " . $score["awayTeamPoints"] ."</li>";
-                }
             ?>
+
+            <li>
+                <?php echo $match["homeTeam"] . " - " . $match["awayTeam"] . " | " . $score["homeTeamPoints"] . " - " . $score["awayTeamPoints"]; ?>
+            </li>
+
+            <?php
+                } 
+            ?>
+            
         </ul>
     </body>
 </html>
