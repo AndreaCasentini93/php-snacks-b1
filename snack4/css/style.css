@@ -10,6 +10,7 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
+    font-family: 'Caveat', cursive;
     background-color: #2B8FDF;
     background-image: linear-gradient(#2B8FDF, #FFFFFF);
 }
@@ -23,8 +24,7 @@ body {
 }
 
 h1 {
-    margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 ul {
@@ -33,8 +33,7 @@ ul {
 
 .box {
     padding: 20px;
-    margin-bottom: 30px;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .box:not(:last-of-type) {
